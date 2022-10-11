@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333333;
+  font-size: 18px;
+  font-family: "Space Mono", monospace;
+}
+
+.header {
+  font-size: 16px;
+  margin: 15px;
+  font-weight: bold;
+}
+
+.hero {
+  display:flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 90%;
+  height: 400px;
+  margin: 10px;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.description {
+  color: #4f4f4f;
+  max-width: 350px;
+  padding-bottom: 30px;
+}
+
+.button {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  background-color: #333333;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+  }
+
+  body {
+    font-size: 24px;
+  }
+
+  .header {
+    font-size: 24px;
+    margin: 45px;
+  }
+  .hero {
+    display: flex-start;
+  }
+
+  img {
+    height: 500px;
+    margin: 100px;
+    
+  }
+
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    max-width: 500px;
+  }
+  
+  .description {
+    padding-bottom: 80px;
+    max-width: 400px;
+    position: relative;
+  }
+  .button {
+    position: relative;
+  }
+}
