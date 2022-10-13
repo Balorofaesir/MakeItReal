@@ -13,7 +13,7 @@
 //     return result;
 //   }
 
-//metodo 2:
+//metodo 2 despues de conocer el metodo time:
 
 function myFunction(dateX, dateY) {
   const yTime = dateX.getTime();
@@ -25,7 +25,3 @@ function myFunction(dateX, dateY) {
   }
   return result;
 }
-myFunction(new Date(2019, 0, 1), new Date(2019, 0, 1))
-// myFunction(new Date('2020/01/01'), new Date('2020/01/02'))	false
-// myFunction(new Date(2019, 0, 1), new Date(2019, 1, 1))	false
-// myFunction(new Date('2000/01/01'), new Date('2000/01/01'))	true
