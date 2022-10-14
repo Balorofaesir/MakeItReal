@@ -67,11 +67,20 @@ img {
 }
 
 @media (min-width: 1440px) {
+  html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
   .container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     max-width:max-content;
+    align-items: center;
   }
 
 
