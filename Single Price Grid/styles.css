@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+
+html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+    background-color: hsl(218, 22%, 67%);
+}
+
+#cardInfo {
+    width: 350px;
+    height: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#cardInfo .gridOne {
+    padding: 10%;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+}
+
+.gridOne h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 20px;
+}
+
+.gridOne h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.gridOne p {
+    color: hsl(218, 22%, 67%);
+    font-size: 14px;
+}
+
+#cardInfo .gridTwo {
+    padding: 10%;
+    width: 100%;
+    height: 250px;
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(179, 62%, 43%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gridTwo .price {
+    justify-content: center;
+    color: hsl(0, 0%, 75%);
+}
+
+.price p {
+    text-transform: lowercase;
+}
+
+.gridTwo .price span {
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+}
+
+#cardInfo .gridThree {
+    padding: 10%;
+    width: 100%;
+    height: 250px;
+    color: hsl(204, 43%, 93%);
+    background-color: rgb(74, 190, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+}
+
+.gridThree h3 {
+    font-size: 18px;
+    color: white;
+}
+
+.gridThree li {
+    font-size: 13px;
+    color: hsl(0, 0%, 85%);
+    line-height: 20px;
+}
+
+@media (min-width: 1440px) {
+
+    #cardInfo {
+        width: 650px;
+        height: 400px;
+        align-items: center;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 45% 55%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    #cardInfo .gridOne {
+        grid-area: 1 / 1 / 2 / 3;
+        height: 100%;
+        justify-content: center;
+    }
+
+    #cardInfo .gridOne h1{
+        margin-bottom: 15px;
+    }
+
+    #cardInfo .gridTwo {
+        grid-area: 2 / 1 / 3 / 2;
+        height: 100%;
+        border-bottom-left-radius: 10px;
+    }
+    #cardInfo .gridThree {
+        grid-area: 2 / 2 / 3 / 3;
+        height: 100%;
+        border-radius: 0 0 10px 0;
+    }
+
+}
