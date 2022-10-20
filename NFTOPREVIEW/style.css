@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --veryDarkBlue-mainBG: hsl(217, 54%, 11%);
+  --veryDarkBlue-cardBG: hsl(216, 50%, 16%);
+  --veryDarkBlue-line: hsl(215, 32%, 27%);
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: var(--softBlue);
+}
+html{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+​html,
+body {
+  background-color: var(--veryDarkBlue-mainBG);
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: var(--veryDarkBlue-line);
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  object-fit: contain;
+  width: 375px;
+  padding: 20px;
+}
+.image {
+  display: flex;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-radius: 15px ;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; 
+}
+.img2 {
+  opacity: 0%;
+  position: absolute;
+}
+
+.img1:hover {
+  filter: opacity(0.7) drop-shadow(0 0 0 hsl(178, 100%, 50%));
+}
+
+.img2:hover {
+  opacity:100%;
+}
+.textContainer{
+ margin-bottom: 15px;
+}
+.whiteText{
+  text-align: left;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 15px;
+  
+}
+.whiteText:hover{
+  color: var(--cyan);
+}
+.flexStartText  {
+  text-align: left;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  margin: 10px;
+}
+.subicons{
+  display: flex;
+  display: row;
+}
+hr{
+  height: 1px;
+  background-color: rgba(214, 186, 186, 0.628);
+  border: 0px;
+  opacity: 80%;
+  }
+.span1{
+color: white;
+}
+.span1:hover{
+  color: hsl(178, 100%, 50%);
+  }
