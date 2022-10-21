@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Verylightgrayishblue: hsl(210, 60%, 98%);
+  --LightGrayishBlue1: hsl(211, 68%, 94%);
+  --LightGrayishBlue2: hsl(205, 33%, 90%);
+  --GrayishBlue: hsl(219, 14%, 63%);
+  --DarkGrayishBlue: hsl(219, 12%, 42%);
+  --VeryDarkBlue: hsl(224, 21%, 14%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: hsl(184, 58%, 43%);
+}
+.img3 {
+  opacity: 50%;
+  width:65%;
+  height: auto;
+  position: fixed;
+    left: -15%;
+    top: -20%;
+  transform: rotate(90deg);
+}
+.img4 {
+  opacity: 50%;
+  width:65%;
+  height: auto;
+  position: fixed;
+    right: -15%;
+    bottom: -20%;
+  transform: rotate(270deg);
+}
+
+main {
+  background-color: var(--White);
+  border-radius: 15px;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.img1 {
+  margin-bottom: 55px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.img2 {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  border-radius: 50px;
+}
+
+hr {
+  filter: opacity(0.4);
+}
+
+.MinTitle {
+  text-align: center;
+  margin: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.Text1 {
+  color: --DarkGrayishBlue;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.miniConteiner {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0px 25px 0px 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 10%;
+}
+
+.SmallestContainers {
+  margin: 10px;
+}
+
+.bigLetters {
+  font-size: 22px;
+  padding-bottom: 5px;
+  font-weight: bolder;
+}
+.smallLetters {
+  font-size: 14px;
+  font-weight: lighter;
+  padding-bottom: 10px;
+  filter: opacity(0.6);
+  text-align: center;
+}
+hr {
+  opacity: 80%;
+}
