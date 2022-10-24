@@ -29,3 +29,7 @@ EXERCISE1#pond {
   justify-content: space-around;
   align-items: flex-end;
   }
+  Exercise8#pond {
+    display: flex;
+  flex-direction: row-reverse;
+  }
