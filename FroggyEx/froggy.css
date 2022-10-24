@@ -80,7 +80,7 @@ Exercise11#pond {
   .yellow {
   align-self:flex-end;
   }
-  
+
   Exercise17#pond {
     display: flex;
     align-items: flex-start;
@@ -89,4 +89,8 @@ Exercise11#pond {
   .yellow {
   order:1;
   align-self:flex-end;
+  }
+  Exercise18:#pond {
+    display: flex;
+  flex-wrap:wrap;
   }
