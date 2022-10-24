@@ -94,3 +94,8 @@ Exercise11#pond {
     display: flex;
   flex-wrap:wrap;
   }
+  Exercise19#pond {
+    display: flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  }
