@@ -33,3 +33,7 @@ EXERCISE1#pond {
     display: flex;
   flex-direction: row-reverse;
   }
+  Exercise9#pond {
+    display: flex;
+  flex-direction: column;
+  }
