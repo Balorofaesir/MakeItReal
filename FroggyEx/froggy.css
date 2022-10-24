@@ -119,4 +119,10 @@ Exercise11#pond {
   flex-direction:column-reverse;
   align-content:center;
   }
+  Exercise24#pond {
+    display: flex;
+  flex-flow: column-reverse wrap-reverse;
+  align-content: space-between;
+  justify-content:center;
+  }
   
