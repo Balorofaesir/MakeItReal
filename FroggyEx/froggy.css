@@ -52,3 +52,9 @@ Exercise11#pond {
   flex-direction:column-reverse;
   justify-content: space-between;
   }
+  Exercise13#pond {
+    display: flex;
+  flex-direction:row-reverse;
+  justify-content: center;
+  align-items:end;
+  }
