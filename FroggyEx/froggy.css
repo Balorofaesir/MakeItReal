@@ -15,3 +15,7 @@ EXERCISE1#pond {
     display: flex;
   justify-content:space-between;
   }
+  Exercise5#pond {
+    display: flex;
+  align-items:flex-end;
+  }
