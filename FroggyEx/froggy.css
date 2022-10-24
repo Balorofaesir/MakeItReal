@@ -2,5 +2,8 @@ EXERCISE1#pond {
     display: flex;
   justify-content: flex-end;
   }
-  
-  
+
+  Exercise2#pond {
+    display: flex;
+  justify-content: center;
+  }
