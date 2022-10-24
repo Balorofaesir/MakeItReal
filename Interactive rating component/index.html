@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>InteractiveComponents</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="events.js"></script>
   </head>
   <body>
-    <main class="container">
+    <main class="container" id="container1">
       <section class="image">
         <img
           class="img1"
@@ -17,35 +18,57 @@
         />
       </section>
       <section class="textContainer">
-        <h1>How did we do? </h1>
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
+        <h1>How did we do?</h1>
+        <div class="GreyText">
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
       </section>
-      <section class="numbers" method="post" id = "focusButton">
-        <button class="subicons" option value="1" ><p>1</p></button>
-        <button class="subicons" option value="2" ><p>2</p></button>
-        <button class="subicons" option value="3" ><p>3</p></button>
-        <button class="subicons" option value="4" ><p>4</p></button>
-        <button class="subicons" option value="5" ><p>5</p></button>
+      <section class="numbers"  id="focusButton">
+        <button class="subicons" id="1" value="1" onclick="value1()">
+          <p>1</p>
+        </button>
+        <button class="subicons" id="2" value="2" onclick="value2()">
+          <p>2</p>
+        </button>
+        <button class="subicons" id="3" value="3" onclick="value3()">
+          <p>3</p>
+        </button>
+        <button class="subicons" id="4" value="4" onclick="value4()">
+          <p>4</p>
+        </button>
+        <button class="subicons" id="5" value="5" onclick="value5()">
+          <p>5</p>
+        </button>
+      </section>
+      <footer>
+        <button class="button1" onclick="display2()">submit</button>
+      </footer>
+    </main>
+
+    <main class="container" id="container2" style="display: none">
+      <div>
+        <img
+          class="img2"
+          src="assets/illustration-thank-you.svg"
+          alt="thank-you IMG"
+        />
+      </div>
+      <section class="Notification">
+        <p>You selected <span id="result">result</span> out of  5</p>
+      </section>
+      <section>
+        <h1 style="font-size: 35px">Thank you!</h1>
       </section>
 
-      <footer>
-        <button class="button1" onclick="myFunction()">submit</button>
-        <script>
-          document.getElementById("demo").focus = function() {myFunction()};
-          
-          function myFunction(id) {
-            document.getElementById("demo").focus = "YOU CLICKED ME!";
-          }
-          </script>
+      <footer class="GreyText">
+        <p>
+          We appreciate you taking the time to give a rating.If you ever need
+          more support don't hesitate to get in touch!
+        </p>
       </footer>
-      <section id="secondCard">
-          <img id="thakyou" alt="thankyou" src="../assets/illustration-thank-you.svg">
-                    <h2>Thank you!</h2>
-          <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
-      </section>
     </main>
   </body>
 </html>

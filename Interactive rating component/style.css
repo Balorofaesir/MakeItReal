@@ -11,15 +11,14 @@
 
 * {
   font-family: "Outfit", sans-serif;
-  font-size: 18px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   line-height: 25px;
   text-transform: capitalize;
-  color: var(--White);
 }
+
 html {
   height: 100%;
   display: flex;
@@ -30,6 +29,9 @@ html {
 body {
   background-color: var(--VeryDarkBlue);
 }
+main{
+  color: var(--White);
+}
 
 .container {
   display: flex;
@@ -39,11 +41,10 @@ body {
   text-align: center;
   margin: auto;
   justify-content: center;
-  object-fit: contain;
   min-width: 355px;
   width: 350px;
   padding: 20px;
-  gap: 25px;
+  gap: 30px;
 }
 .image {
   display: flex;
@@ -61,10 +62,13 @@ body {
 .textContainer {
   display: flex;
   flex-direction: column;
-  gap:20px;
   margin-bottom: 15px;
-  background-color: rgb(98, 0, 255);
   text-align: left;
+  gap: 15px;
+}
+.GreyText{
+  color: var(--MediumGrey);
+  font-size: 18px;
 }
 
 .numbers {
@@ -76,19 +80,20 @@ body {
 .subicons {
   opacity: 30%;
   background-color: var(--MediumGrey);
-  border: 15px solid var(--MediumGrey);
-  border-radius: 50px;
-  width: 16%;
+  border:10px solid var(--MediumGrey);
+  border-radius: 100%;
+  color: var(--White);
+  width: 15%;
 }
 .subicons:hover {
   opacity: 100%;
   background-color: var(--Orange);
-  border: 15px solid var(--Orange);
+  border: 10px solid var(--Orange);
 
 }.subicons:focus {
   opacity: 100%;
  background-color: var(--MediumGrey);
-  border: 15px solid var(--MediumGrey);
+  border: 10px solid var(--MediumGrey);
 }
 
 footer {
@@ -98,14 +103,23 @@ footer {
   align-items: center;
 }
 .button1{
+  color: var(--White);
   background-color: var(--Orange);
-  border: 0;
+  border: 10px solid var(--Orange);
+  width:80% ;
+  font-size: 20px;
+  border-radius: 3rem;
 }
 .button1:hover{
   background-color: var(--White);
+  border: 10px solid var(--White);
   color: var(--Orange);
 }
-
-#secondCard {
-  display: none;
+.Notification{
+  opacity: 60%;
+  color: var(--Orange);
+background-color: var(--VeryDarkBlue);
+border-radius: 3rem;
+width: 70%;
+align-self: center;
 }
