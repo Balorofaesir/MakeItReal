@@ -113,4 +113,10 @@ Exercise11#pond {
     flex-wrap: wrap;
   align-content:end;
   }
+  Exercise23#pond {
+    display: flex;
+    flex-wrap: wrap;
+  flex-direction:column-reverse;
+  align-content:center;
+  }
   
