@@ -37,3 +37,8 @@ EXERCISE1#pond {
     display: flex;
   flex-direction: column;
   }
+  Exercise10#pond {
+  display: flex;
+flex-direction:row-reverse;
+justify-content:flex-end;
+}
