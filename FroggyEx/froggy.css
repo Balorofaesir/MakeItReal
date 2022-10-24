@@ -99,4 +99,8 @@ Exercise11#pond {
   flex-direction:column;
   flex-wrap:wrap;
   } 
+  Exercise20#pond {
+    display: flex;
+  flex-flow: column wrap;
+  }
   
