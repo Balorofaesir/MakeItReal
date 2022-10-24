@@ -7,3 +7,7 @@ EXERCISE1#pond {
     display: flex;
   justify-content: center;
   }
+  Exercise3#pond {
+    display: flex;
+  justify-content:space-around;
+  }
