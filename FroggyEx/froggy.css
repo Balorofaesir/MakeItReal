@@ -24,3 +24,8 @@ EXERCISE1#pond {
   justify-content:center;
   align-items:center;
   }
+  Exercise7#pond {
+    display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  }
