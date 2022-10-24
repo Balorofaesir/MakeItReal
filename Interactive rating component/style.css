@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap");
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: var(--White);
+}
+html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+​html,
+body {
+  background-color: var(--VeryDarkBlue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: var(--DarkBlue);
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  object-fit: contain;
+  min-width: 355px;
+  width: 350px;
+  padding: 20px;
+  gap: 25px;
+}
+.image {
+  display: flex;
+  background-color: rgba(45%, 51%, 59%,0.2);
+  width: fit-content;
+  border: 15px solid  rgba(45%, 51%, 59%,0.2);
+  border-radius: 50%; 
+}
+
+.img1 {
+  background-color: rgba(45%, 51%, 59%,0.2);
+  border-radius: 100%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  margin-bottom: 15px;
+  background-color: rgb(98, 0, 255);
+  text-align: left;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.subicons {
+  opacity: 30%;
+  background-color: var(--MediumGrey);
+  border: 15px solid var(--MediumGrey);
+  border-radius: 50px;
+  width: 16%;
+}
+.subicons:hover {
+  opacity: 100%;
+  background-color: var(--Orange);
+  border: 15px solid var(--Orange);
+
+}.subicons:focus {
+  opacity: 100%;
+ background-color: var(--MediumGrey);
+  border: 15px solid var(--MediumGrey);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button1{
+  background-color: var(--Orange);
+  border: 0;
+}
+.button1:hover{
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+#secondCard {
+  display: none;
+}
