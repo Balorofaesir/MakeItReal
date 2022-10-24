@@ -11,3 +11,7 @@ EXERCISE1#pond {
     display: flex;
   justify-content:space-around;
   }
+ Exercise4#pond {
+    display: flex;
+  justify-content:space-between;
+  }
