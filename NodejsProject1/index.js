@@ -13,6 +13,6 @@ const names = fakeNames(1000)
 
 fs.writeFile("NodejsProject1/names.txt"   , names, err => {
     if (err) {
-      console.error(err);
-    }
-  });
+      console.error("error")
+    } else (console.log("The process has ended succesfully"))
+  })
