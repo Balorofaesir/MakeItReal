@@ -6,7 +6,7 @@
   //lo vuelve un string
   let str = contents.toString(); 
   //cuenta los matches
-  let count = (str.match(/\n/g) || []).length;
+  let count = (str.match(/\n/g)).length;
   //lo convierte en string
   console.log(count);
 
