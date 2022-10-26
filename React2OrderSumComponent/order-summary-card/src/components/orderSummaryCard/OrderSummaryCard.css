@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --hoverBlue: hsl(271, 91%, 55%);
+  }
+
+main{
+    width: 365px; 
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.hero{
+    width: 100%;
+    border-top-right-radius: 20px ;
+    border-top-left-radius: 20px ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.title{
+    color: var(--darkBlue);
+    font-weight: 900;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.info{
+    color: var(--desaturatedBlue);
+    width: 85%;
+    text-align: center;
+    margin: 0;
+}
+
+.plan{
+    background-color: var(--veryPaleBlue);
+    width: 85%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.icon{
+    place-self: center;
+}
+.conText{
+    place-self: center;
+    justify-self: start;
+    color: var(--desaturatedBlue);
+  
+}
+.span1 {
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+.HyperText{
+    place-self: center;
+    color: blue;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.HyperText:hover{
+    color: var(--hoverBlue);
+    text-decoration: none;
+}
+
+.payment{
+    width: 85%;
+    border: none;
+    background-color: var(--brightBlue);
+    color: var(--veryPaleBlue);
+    border-radius: 7px;
+    box-shadow: 0px 10px 10px var(--desaturatedBlue);
+    font-weight: 900;
+    height: 40px;
+}
+
+.cancel{
+    width: 85%;
+    border: none;
+    background-color: white;
+    color: var(--desaturatedBlue);
+    font-weight: 900;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.payment:hover{
+    background-color: var(--hoverBlue);
+}
+
+.cancel:hover{
+    color: var(--darkBlue);
+}
