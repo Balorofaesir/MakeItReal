@@ -4,7 +4,7 @@ function myFunction(a, b) {
   for (i = 0; i < a.length; i++) {
     obj[a[i]] = b[i];
   }
-  return obj;
+  console.log obj;
 }
 
 //tambien se puede:

@@ -1,5 +1,15 @@
 {
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
   "dependencies": {
-    "learnyounode": "^3.2.0"
+    "connect-livereload": "^0.6.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "learnyounode": "^3.2.0",
+    "livereload": "^0.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
