@@ -1,20 +1,20 @@
 const {
   getCharacters,
   getEpisodes,
-  getCharacterEpisodes,
-  getEpisodeCharacters,
+  getCharacterId,
+  getEpisodeId,
 } = require("./service");
 
 let CharactersOrEpisodes = process.argv[2];
 let id = process.argv[3];
 
 
- if (CharactersOrEpisodes === "getCharacters") {
-  getCharacters();
-} else if (CharactersOrEpisodes === "getEpisodes") {
-  getEpisodes();
-} else if (CharactersOrEpisodes === "getCharacterEpisodes") {
-  getCharacterEpisodes(id);
-} else if (CharactersOrEpisodes === "getEpisodeCharacters") {
-    getEpisodeCharacters(id);
+if (CharactersOrEpisodes === 'characters') {
+  if (id) {getCharacterId(id)
+  } else {getCharacters()
+  }
+} else if (CharactersOrEpisodes === 'episodes') {
+  if (id) {getEpisodeId(id)
+  } else {getEpisodes()
+  }
 }

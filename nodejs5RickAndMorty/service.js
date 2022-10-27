@@ -28,42 +28,23 @@ function getCharacters() {
     });
 }
 
-function getCharacterEpisodes(id) {
+function getCharacterId(id) {
   axios
-    .get("https://rickandmortyapi.com/api/character")
+    .get(`https://rickandmortyapi.com/api/character/${id}`)
     .then(function (response) {
-      let data = response.data.results;
-      for (let index = 0; index < data.length; index++) {
-        if (id === data[index].name) {
-          let data2 = data[index].episode;
-          let data3 = [];
-          data2.forEach((element) => {
-            data3.push(element.slice(-10));
-          });
-          console.log(id, "is in the following episodes:", data3);
-        }
-      }
+      let data = response.data;
+      console.log(data)
     })
     .catch(function (error) {
       console.error(error);
     });
 }
-
-function getEpisodeCharacters(id) {
+function getEpisodeId(id) {
   axios
-    .get("https://rickandmortyapi.com/api/episode")
+    .get(`https://rickandmortyapi.com/api/episode/${id}`)
     .then(function (response) {
-      let data = response.data.results;
-      for (let index = 0; index < data.length; index++) {
-        if (id === data[index].name) {
-          let data2 = data[index].characters
-          let data3 = [];
-          data2.forEach((element) => {
-            data3.push(element.replace(/\D/g, ''));
-          });
-          console.log(data3);
-        }
-      }
+      let data = response.data;
+      console.log(data)
     })
     .catch(function (error) {
       console.error(error);
@@ -73,6 +54,6 @@ function getEpisodeCharacters(id) {
 module.exports = {
   getCharacters,
   getEpisodes,
-  getCharacterEpisodes,
-  getEpisodeCharacters,
+  getCharacterId,
+  getEpisodeId,
 };
