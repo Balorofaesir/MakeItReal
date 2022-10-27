@@ -76,11 +76,3 @@ module.exports = {
   getCharacterEpisodes,
   getEpisodeCharacters,
 };
-// if (
-//   CharactersOrEpisodes == !"getCharacters" &&
-//   CharactersOrEpisodes == !"getEpisodes" &&
-//   CharactersOrEpisodes == !"getCharacterEpisodes" &&
-//   CharactersOrEpisodes == !"getEpisodeCharacters"
-// ) {
-//   console.log(error);
-// } else
